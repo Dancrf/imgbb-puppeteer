@@ -26,7 +26,6 @@ async function run() {
     await mailtm.waitForSelector('[title="Seu endereço de e-mail temporário, clique para copiar para a área de transferência!"]')
     await mailtm.waitForTimeout(4000)
     const email = await mailtm.$eval('[title="Seu endereço de e-mail temporário, clique para copiar para a área de transferência!"]', el => el.value)
-
     console.log(chalk.bold.blueBright('\nE-mail gerado: ' + chalk.greenBright(email)))
 
     const nomeUsuario = email.slice(0, 6)
