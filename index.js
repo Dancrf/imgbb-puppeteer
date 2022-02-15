@@ -40,7 +40,7 @@ async function run() {
     await imgbb.waitForSelector('[name="email"]')
     await imgbb.type('[name="email"]', email)
     await imgbb.type('[name="username"]', nomeUsuario)
-    await imgbb.type('[name="password"]', 'Danyel250#')
+    await imgbb.type('[name="password"]', 'Random250#')
 
     // * Marcar a checkbox
     await imgbb.$eval('[name="signup-accept-terms-policies"]', check => check.checked = true);
