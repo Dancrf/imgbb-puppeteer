@@ -100,9 +100,6 @@ async function run() {
     await imgbb.waitForSelector('.text-input')
     const api = await imgbb.$eval('.text-input', el => el.value)
     console.log(chalk.yellowBright('Api key: ' + api)) // TODO - POR FINAL, COPIA E PRINTA NO CONSOLE A API.
-
-    const APIarray = []
-    APIarray.push(api)
     console.log(APIarray)
 
     await browser.close();
